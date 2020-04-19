@@ -7810,3 +7810,127 @@ Caused by: java.net.URISyntaxException: Illegal character in authority at index 
 2020-04-19 21:48:21.522  WARN 7064 --- [http-nio-1111-exec-7] c.n.eureka.resources.InstanceResource    : Not Found (Renew): RIBBON-CONSUMER - 172.20.10.4:ribbon-consumer:9000
 2020-04-19 21:48:21.529  INFO 7064 --- [http-nio-1111-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance RIBBON-CONSUMER/172.20.10.4:ribbon-consumer:9000 with status UP (replication=false)
 2020-04-19 21:48:59.095  INFO 7064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-19 21:49:59.096  INFO 7064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2020-04-19 21:50:59.099  INFO 7064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2020-04-19 21:51:59.103  INFO 7064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2020-04-19 21:52:59.104  INFO 7064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2020-04-19 21:53:59.108  INFO 7064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2020-04-19 21:54:59.108  INFO 7064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-19 21:55:59.113  INFO 7064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2020-04-19 21:56:45.646  INFO 7064 --- [Thread-20] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5be49b60: startup date [Sun Apr 19 21:47:55 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@be64738
+2020-04-19 21:56:45.650  INFO 7064 --- [Thread-20] c.n.e.EurekaDiscoveryClientConfiguration : Unregistering application eureka-server with eureka with status DOWN
+2020-04-19 21:56:45.652  INFO 7064 --- [Thread-20] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-04-19 21:56:45.653  INFO 7064 --- [Thread-20] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-04-19 21:56:45.657  INFO 7064 --- [Thread-20] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2020-04-19 21:56:45.668  INFO 7064 --- [Thread-20] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2020-04-19 21:56:45.668  INFO 7064 --- [Thread-20] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2020-04-19 21:56:45.675  INFO 7064 --- [Thread-20] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2020-04-19 21:56:45.676  INFO 7064 --- [Thread-20] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2020-04-19 21:56:52.351  INFO 7165 --- [main] com.ryoua.EurekaServerApplication        : No active profile set, falling back to default profiles: default
+2020-04-19 21:56:52.361  INFO 7165 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63eef88a: startup date [Sun Apr 19 21:56:52 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@be64738
+2020-04-19 21:56:53.031  WARN 7165 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'refreshScope' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2020-04-19 21:56:53.135  INFO 7165 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ecf1d1cc-96ba-3ba5-be9f-49ac4fe9885e
+2020-04-19 21:56:53.143  INFO 7165 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-19 21:56:53.155  INFO 7165 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$486c42d1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-19 21:56:53.158  INFO 7165 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.RefreshEndpointAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.RefreshEndpointAutoConfiguration$$EnhancerBySpringCGLIB$$f1cb44c7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-19 21:56:53.303  INFO 7165 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 1111 (http)
+2020-04-19 21:56:53.310  INFO 7165 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2020-04-19 21:56:53.311  INFO 7165 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.36
+2020-04-19 21:56:53.381  INFO 7165 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-19 21:56:53.382  INFO 7165 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1021 ms
+2020-04-19 21:56:53.876  INFO 7165 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'metricFilter' to: [/*]
+2020-04-19 21:56:53.876  INFO 7165 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-04-19 21:56:53.876  INFO 7165 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-04-19 21:56:53.877  INFO 7165 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-04-19 21:56:53.877  INFO 7165 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'requestContextFilter' to: [/*]
+2020-04-19 21:56:53.877  INFO 7165 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'webRequestTraceFilter' to: [/*]
+2020-04-19 21:56:53.877  INFO 7165 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'servletContainer' to urls: [/eureka/*]
+2020-04-19 21:56:53.877  INFO 7165 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2020-04-19 21:56:53.878  INFO 7165 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2020-04-19 21:56:53.943  INFO 7165 --- [localhost-startStop-1] c.s.j.s.i.a.WebApplicationImpl           : Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2020-04-19 21:56:53.995  INFO 7165 --- [localhost-startStop-1] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-04-19 21:56:53.996  INFO 7165 --- [localhost-startStop-1] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-04-19 21:56:54.051  INFO 7165 --- [localhost-startStop-1] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-04-19 21:56:54.051  INFO 7165 --- [localhost-startStop-1] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-04-19 21:56:54.330  INFO 7165 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-04-19 21:56:54.363  INFO 7165 --- [main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2020-04-19 21:56:54.368  INFO 7165 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1587304614367 with initial instances count: 0
+2020-04-19 21:56:54.429  INFO 7165 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2020-04-19 21:56:54.430  WARN 7165 --- [main] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2020-04-19 21:56:54.438  INFO 7165 --- [main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2020-04-19 21:56:54.439  INFO 7165 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2020-04-19 21:56:54.549  INFO 7165 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63eef88a: startup date [Sun Apr 19 21:56:52 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@be64738
+2020-04-19 21:56:54.596  INFO 7165 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String org.springframework.cloud.netflix.eureka.server.EurekaController.status(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.Object>)
+2020-04-19 21:56:54.597  INFO 7165 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/lastn],methods=[GET]}" onto public java.lang.String org.springframework.cloud.netflix.eureka.server.EurekaController.lastn(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.Object>)
+2020-04-19 21:56:54.598  INFO 7165 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-04-19 21:56:54.599  INFO 7165 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-04-19 21:56:54.623  INFO 7165 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-19 21:56:54.623  INFO 7165 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-19 21:56:54.666  INFO 7165 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-19 21:56:55.047  INFO 7165 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/pause || /pause.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2020-04-19 21:56:55.048  INFO 7165 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/logfile || /logfile.json],methods=[GET || HEAD]}" onto public void org.springframework.boot.actuate.endpoint.mvc.LogFileMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2020-04-19 21:56:55.050  INFO 7165 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-04-19 21:56:55.052  INFO 7165 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-04-19 21:56:55.053  INFO 7165 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-04-19 21:56:55.053  INFO 7165 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-04-19 21:56:55.054  INFO 7165 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2020-04-19 21:56:55.055  INFO 7165 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-04-19 21:56:55.055  INFO 7165 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal)
+2020-04-19 21:56:55.056  INFO 7165 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2020-04-19 21:56:55.057  INFO 7165 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2020-04-19 21:56:55.057  INFO 7165 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/features || /features.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-04-19 21:56:55.058  INFO 7165 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2020-04-19 21:56:55.059  INFO 7165 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-04-19 21:56:55.060  INFO 7165 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/restart || /restart.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
+2020-04-19 21:56:55.061  INFO 7165 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-04-19 21:56:55.062  INFO 7165 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2020-04-19 21:56:55.062  INFO 7165 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-04-19 21:56:55.063  INFO 7165 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/resume || /resume.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2020-04-19 21:56:55.063  INFO 7165 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-04-19 21:56:55.064  INFO 7165 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-04-19 21:56:55.209  INFO 7165 --- [main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63eef88a: startup date [Sun Apr 19 21:56:52 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@be64738] and template loader path [classpath:/templates/]
+2020-04-19 21:56:55.210  INFO 7165 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2020-04-19 21:56:55.267  WARN 7165 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-04-19 21:56:55.267  INFO 7165 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-19 21:56:55.271  WARN 7165 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-04-19 21:56:55.271  INFO 7165 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-19 21:56:55.368  INFO 7165 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-04-19 21:56:55.377  INFO 7165 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2020-04-19 21:56:55.378  INFO 7165 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2020-04-19 21:56:55.381  INFO 7165 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2020-04-19 21:56:55.381  INFO 7165 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+2020-04-19 21:56:55.382  INFO 7165 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+2020-04-19 21:56:55.384  INFO 7165 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2020-04-19 21:56:55.397  INFO 7165 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+2020-04-19 21:56:55.408  INFO 7165 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2020-04-19 21:56:55.413  INFO 7165 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=63eef88a,type=ConfigurationPropertiesRebinder]
+2020-04-19 21:56:55.419  INFO 7165 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+2020-04-19 21:56:55.770  INFO 7165 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2020-04-19 21:56:55.771  INFO 7165 --- [Thread-17] o.s.c.n.e.server.EurekaServerBootstrap   : Setting the eureka configuration..
+2020-04-19 21:56:55.771  INFO 7165 --- [main] c.n.e.EurekaDiscoveryClientConfiguration : Registering application eureka-server with eureka with status UP
+2020-04-19 21:56:55.771  INFO 7165 --- [Thread-17] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka data center value eureka.datacenter is not set, defaulting to default
+2020-04-19 21:56:55.772  INFO 7165 --- [Thread-17] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka environment value eureka.environment is not set, defaulting to test
+2020-04-19 21:56:55.784  INFO 7165 --- [Thread-17] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2020-04-19 21:56:55.784  INFO 7165 --- [Thread-17] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2020-04-19 21:56:55.785  INFO 7165 --- [Thread-17] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2020-04-19 21:56:55.785  INFO 7165 --- [Thread-17] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2020-04-19 21:56:55.785  INFO 7165 --- [Thread-17] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2020-04-19 21:56:55.794  INFO 7165 --- [Thread-17] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2020-04-19 21:56:55.927  INFO 7165 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 1111 (http)
+2020-04-19 21:56:55.928  INFO 7165 --- [main] c.n.e.EurekaDiscoveryClientConfiguration : Updating port to 1111
+2020-04-19 21:56:55.931  INFO 7165 --- [main] com.ryoua.EurekaServerApplication        : Started EurekaServerApplication in 4.217 seconds (JVM running for 4.749)
+2020-04-19 21:57:02.097  INFO 7165 --- [http-nio-1111-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-04-19 21:57:02.097  INFO 7165 --- [http-nio-1111-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-04-19 21:57:02.109  INFO 7165 --- [http-nio-1111-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2020-04-19 21:57:02.345  INFO 7165 --- [http-nio-1111-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-SERVICE/172.20.10.4:hello-service:8080 with status UP (replication=false)
+2020-04-19 21:57:03.098  INFO 7165 --- [http-nio-1111-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-SERVICE/192.168.0.104:hello-service:8081 with status DOWN (replication=false)
+2020-04-19 21:57:03.105  INFO 7165 --- [http-nio-1111-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance HELLO-SERVICE/192.168.0.104:hello-service:8081 (replication=false)
+2020-04-19 21:57:08.503  WARN 7165 --- [http-nio-1111-exec-8] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: RIBBON-CONSUMER/172.20.10.4:ribbon-consumer:9000
+2020-04-19 21:57:08.504  INFO 7165 --- [http-nio-1111-exec-8] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): RIBBON-CONSUMER - 172.20.10.4:ribbon-consumer:9000
+2020-04-19 21:57:08.504  INFO 7165 --- [http-nio-1111-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance RIBBON-CONSUMER/172.20.10.4:ribbon-consumer:9000 with status DOWN (replication=false)
+2020-04-19 21:57:09.347  INFO 7165 --- [http-nio-1111-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-SERVICE/172.20.10.4:hello-service:8081 with status UP (replication=false)
+2020-04-19 21:57:14.013  INFO 7165 --- [http-nio-1111-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance RIBBON-CONSUMER/172.20.10.4:ribbon-consumer:9000 with status UP (replication=false)
+2020-04-19 21:57:55.790  INFO 7165 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-19 21:58:55.791  INFO 7165 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2020-04-19 21:59:55.796  INFO 7165 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2020-04-19 22:00:55.799  INFO 7165 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
