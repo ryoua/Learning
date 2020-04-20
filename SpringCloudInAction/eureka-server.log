@@ -7934,3 +7934,12 @@ Caused by: java.net.URISyntaxException: Illegal character in authority at index 
 2020-04-19 21:58:55.791  INFO 7165 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
 2020-04-19 21:59:55.796  INFO 7165 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
 2020-04-19 22:00:55.799  INFO 7165 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2020-04-19 22:01:51.121  INFO 7165 --- [Thread-20] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63eef88a: startup date [Sun Apr 19 21:56:52 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@be64738
+2020-04-19 22:01:51.121  INFO 7165 --- [Thread-20] c.n.e.EurekaDiscoveryClientConfiguration : Unregistering application eureka-server with eureka with status DOWN
+2020-04-19 22:01:51.122  INFO 7165 --- [Thread-20] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-04-19 22:01:51.122  INFO 7165 --- [Thread-20] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-04-19 22:01:51.123  INFO 7165 --- [Thread-20] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2020-04-19 22:01:51.125  INFO 7165 --- [Thread-20] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2020-04-19 22:01:51.126  INFO 7165 --- [Thread-20] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2020-04-19 22:01:51.127  INFO 7165 --- [Thread-20] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2020-04-19 22:01:51.127  INFO 7165 --- [Thread-20] c.n.eureka.DefaultEurekaServerContext    : Shut down
