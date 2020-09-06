@@ -15,6 +15,7 @@ int main(int argc, char *argv[]) {
         sleep(1);
         *p = *p + 1;
         printf("(%d) p: %d\n", getpid(), *p);
+        
     }
     return 0;
 }
