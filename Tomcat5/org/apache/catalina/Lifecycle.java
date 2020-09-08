@@ -66,19 +66,12 @@ package org.apache.catalina;
 
 
 /**
- * Common interface for component life cycle methods.  Catalina components
- * may, but are not required to, implement this interface (as well as the
- * appropriate interface(s) for the functionality they support) in order to
- * provide a consistent mechanism to start and stop the component.
- *
- * @author Craig R. McClanahan
- * @version $Revision: 1.6 $ $Date: 2002/06/09 02:10:50 $
+ * 生命周期接口
  */
-
 public interface Lifecycle {
 
 
-    // ----------------------------------------------------- Manifest Constants
+    // 生命周期时间常量----------------------------------------------------- Manifest Constants
 
 
     /**
@@ -121,7 +114,7 @@ public interface Lifecycle {
 
 
     /**
-     * Add a LifecycleEvent listener to this component.
+     * 添加生命周期监听器
      *
      * @param listener The listener to add
      */
@@ -129,14 +122,13 @@ public interface Lifecycle {
 
 
     /**
-     * Get the lifecycle listeners associated with this lifecycle. If this 
-     * Lifecycle has no listeners registered, a zero-length array is returned.
+     * 获取全部生命周期监听器
      */
     public LifecycleListener[] findLifecycleListeners();
 
 
     /**
-     * Remove a LifecycleEvent listener from this component.
+     * 移除生命周期监听器
      *
      * @param listener The listener to remove
      */
