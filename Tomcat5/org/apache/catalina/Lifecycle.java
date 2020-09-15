@@ -74,21 +74,10 @@ public interface Lifecycle {
     // 生命周期时间常量----------------------------------------------------- Manifest Constants
 
 
-    /**
-     * The LifecycleEvent type for the "component start" event.
-     */
     public static final String START_EVENT = "start";
 
-
-    /**
-     * The LifecycleEvent type for the "component before start" event.
-     */
     public static final String BEFORE_START_EVENT = "before_start";
 
-
-    /**
-     * The LifecycleEvent type for the "component after start" event.
-     */
     public static final String AFTER_START_EVENT = "after_start";
 
 
